@@ -5,3 +5,9 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 ## Example Images
 
 ![image] (https://raw.githubusercontent.com/xu-jerry/computer-vision/master/Traffic%20Light%20Project/Images/green_labeled.png)
+
+## Difficulties
+
+Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
+
+## 
