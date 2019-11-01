@@ -4,5 +4,4 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 
 ## Example Images
 
-![image] 
-(https://github.com/xu-jerry/computer-vision/blob/master/Traffic%20Light%20Project/Images/yellow_green_labeled.png)
+![image] (https://raw.githubusercontent.com/xu-jerry/computer-vision/master/Traffic%20Light%20Project/Images/green_labeled.png)
