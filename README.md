@@ -6,9 +6,9 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 [placeholder Youtube link]
 
 ## Data Visualization
-[images ]
+### Green light
+<img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="300">
 
-![green] (https://github.com/xu-jerry/trafficlight-project/blob/master/Images/green_labeled.png)
 
 Challenging case image, and data distribution
 
