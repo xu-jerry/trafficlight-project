@@ -8,7 +8,7 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 ## Data Visualization
 [images ]
 
-![green] (Images/green_labeled.png)
+![green] (https://github.com/xu-jerry/trafficlight-project/blob/master/Images/green_labeled.png)
 
 Challenging case image, and data distribution
 
