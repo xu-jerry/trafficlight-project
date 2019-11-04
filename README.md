@@ -45,7 +45,7 @@ Here is the comparision of train versus test data
 
 ## Convolutional Neural Network
 
-Convolutional neural networks (CNN) are used in machine learning, specifially when dealing with images, in order to build models that can label data. They are conprised of layers of "neurons" that are very similar to brain neurons- they take information from the previous layer and processes it, giving an output of the modified information. In Convolutional Neural Networks, they give the input tensor a weight and bias using the formula y = wx + b.
+Convolutional neural networks (CNN) are used in machine learning, specifially when dealing with images, in order to build models that can label data. They are comprised of layers of "neurons" that are very similar to brain neurons- they take information from the previous layer and processes it, giving an output of the modified information. In convolutional neural networks, they give the input tensor a weight and bias using the formula y = wx + b. This is also known as a convolution layer. Other layers can have activation functions, which help the neuron decide if it will fire or not. Many activation functions are used today, but the most popular one and the one I used is what is known as ReLU, aka Rectified Linear Unit. Pooling layers reduce the number of parameters in the network and make the information easier to process. The last couple of layers are usually fully connected layers, where they are connected to all the activations from previous layers.
 
 The input for this CNN is an image and the output is a matrix of probabilities, size three. The first number is green, the second is red, and the third is yellow. The greater the number, the more likely the model thinks it is.
 
