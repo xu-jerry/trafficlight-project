@@ -59,7 +59,7 @@ To train, I used a decaying learning rate, starting from 0.001 and decaying by 1
 
 In order to see if my model was overfitting the data, I split the training data into train and validation, in an 8:2 ratio. Here is the plot of training loss versus validation loss:
 
-<img src="" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrainingValidationLoss.png" width = "300">
 
 As you can see, the validation loss is always below the training loss, suggesting that there is no overfitting. Note that the y-axis is log scale.
 
@@ -68,6 +68,8 @@ As you can see, the validation loss is always below the training loss, suggestin
 After training the model, I evaluated it on the dataset. Accuracy for the training data was 99% (4897/4898), validation was 100% (1225/1225), and test was 91% (2705/2941). Because it is a lot higher than 33%, I know that it was not randomly guessing and was actually able to identify most of the cases. 
 
 Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/1042) of red, and 34% (59/169) of yellow. As expected, yellow was the most inaccurate, due to the very few training data of yellow.
+
+### Confusion Matrix
 
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "300">
 
