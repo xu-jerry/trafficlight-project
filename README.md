@@ -2,8 +2,8 @@
 
 Using the Bosch dataset, this is a machine learning project that will be able to identify whether a trafficlight in an image is red, green, or, yellow. The Bosch dataset has test data from 24068 to 40734, evens, resulting in 8334 images.
 
-## Video Demo
-[![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=a2UpQiP4zbA)
+## Demo Video
+[![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=G4B4tAR6vx4)
 
 ## Data Visualization
 ### Green light
