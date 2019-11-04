@@ -1,18 +1,36 @@
 # Traffic Light Project
 
-Using the Bosch dataset, this is a machine learning project that will be able to identify whether a trafficlight in an image is red, green, or, yellow. The Bosch dataset has test data from 24068 to 40734, evens, resulting in 8334 images.
+Using the Bosch dataset, this is a machine learning project that will be able to identify whether a traffic light in an image is red, green, or, yellow. The Bosch dataset has testing and training data on their website, but I decided to switch them because the training data had a couple of errors in the annotations. In addition, I wanted the training to have more images than test. My training dataset had 8334 images and my testing dataset had 5093 images, all with a resolution of 1280 x 720 pixels.
 
 ## Demo Video
 [![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=G4B4tAR6vx4)
 
 ## Data Visualization
+
 ### Green light
 <img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="300">
-
-
-Challenging case image, and data distribution
-
+### Red Light
+<img src="" width = "300">
+### Yellow Light
+<img src="" width = "300">
+### Challenging Cases 
 Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
+<img src="" width = "300">
+Occluded
+<img src="" width = "300">
+Small
+### Data Distribution
+#### Train
+<img src="" width = "300">
+<img src="" width = "300">
+<img src="" width = "300">
+<img src="" width = "300">
+#### Test
+<img src="" width = "300">
+<img src="" width = "300">
+<img src="" width = "300">
+<img src="" width = "300">
+Here is comparision of the train versus test data
 
 ## Convolutional Neural Network
 
@@ -26,20 +44,19 @@ This is a graph of what my CNN looks like:
 
 ## Training Process
 
-To train, I used the decay learning rate
+To train, I used a decaying learning rate, starting from 0.001 and decaying by 1/5 every time the change in loss is less than 5 times the learning rate. Trial and error taught me that 0.001 was the optimal learning rate to begin with because 0.01 would overshoot and 0.0001 would be too slow to converge. 
 
-linear classifier
-large learning rates
-other hyperparameters
+In order to see if my model was overfitting the data, I split the training data into train and validation, in an 8:2 ratio. Here is the plot of training loss versus validation loss:
 
-plot - training loss, validation loss
+<img src="" width = "300">
+
+As you can see, the validation loss is always below the trainig loss, suggesting that there is no overfitting. Note that the y-axis is log scale.
 
 ## Evaluation
 
-Train, validation, and test accuracy
-report the confusion matrix
+After training the model, I evaluated it on the dataset. Accuracy for the training data was 99% (4897/4898), validation was 100% (1225/1225), and test was 91% (2705/2941). Because it is a lot higher than 33%, I know that it was not randomly guessing and was actually able to identify most of the cases. 
+
+Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/1042) of red, and 34% (59/169) of yellow. As expected, yellow was the most inaccurate, due to the very few training data of yellow.
 
 ## Further Discussion
-Annotation issue
-Simplied version (remove arrows, remove occluded case, remove tiny crops)
-we need detector/tracker
+This entire project used annotations from the Bosch dataset. Later, this can expand to image segmentation so that it can identify where the traffic lights are from any image, in addition to classifying them. Also, this was a simplified version of the problem, with all the arrow cases removed and all the traffic lights smaller than 5 pixels wide and 10 pixels long removed. If this can expand further, we can implement this piece of code into a physical device than can be attached to a windshield, identifying traffic lights in real time.
