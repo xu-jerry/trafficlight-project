@@ -16,7 +16,13 @@ Many of the images were either occluded, off, or too small. For some, even a hum
 
 ## Convolutional Neural Network
 
-Describe how CNN works and draw your model architecture. Briefly discuss why you choose the model.
+Convolutional neural networks (CNN) are used in machine learning, specifially when dealing with images, in order to build models that can label data. They are conprised of layers of "neurons" that are very similar to brain neurons- they take information from the previous layer and processes it, giving an output of the modified information. In Convolutional Neural Networks, they give the input tensor a weight and bias using the formula y = wx + b.
+
+The input for this CNN is an image and the output is a matrix of probabilities, size three. The first number is green, the second is red, and the third is yellow. The greater the number, the more likely the model thinks it is.
+
+This is a graph of what my CNN looks like:
+
+
 
 ## Training Process
 
