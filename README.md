@@ -22,11 +22,11 @@ The input for this CNN is an image and the output is a matrix of probabilities, 
 
 This is a graph of what my CNN looks like:
 
-
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/Model%20Architecture.png" width = "300">
 
 ## Training Process
 
-decay learning rate
+To train, I used the decay learning rate
 
 linear classifier
 large learning rates
