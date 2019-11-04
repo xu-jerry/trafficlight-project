@@ -9,22 +9,28 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 
 ### Green light
 <img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="300">
+
 ### Red Light
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/red_labeled.png" width = "300">
+
 ### Yellow Light
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/yellow_green_labeled.png" width = "300">
+
 ### Challenging Cases 
 Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/occluded.png" width = "300">
 Occluded
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/small.png" width = "300">
 Small
+
 ### Data Distribution
+
 #### Train
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_distribution.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_width.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_height.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png" width = "300">
+
 #### Test
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_distribution.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_width.png" width = "300">
