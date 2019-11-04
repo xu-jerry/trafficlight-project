@@ -18,9 +18,13 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 
 ### Challenging Cases 
 Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
+
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/occluded.png" width = "300">
+
 Occluded
+
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/small.png" width = "300">
+
 Small
 
 ### Data Distribution
@@ -28,7 +32,7 @@ Small
 #### Train
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_distribution.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_width.png" width = "300">
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_height.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png" width = "300">
 
 #### Test
@@ -55,7 +59,7 @@ To train, I used a decaying learning rate, starting from 0.001 and decaying by 1
 
 In order to see if my model was overfitting the data, I split the training data into train and validation, in an 8:2 ratio. Here is the plot of training loss versus validation loss:
 
-<img src="" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "300">
 
 As you can see, the validation loss is always below the trainig loss, suggesting that there is no overfitting. Note that the y-axis is log scale.
 
