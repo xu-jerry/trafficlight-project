@@ -26,13 +26,7 @@ Examples of training images, with the traffic lights outlined in the color they 
 ### Challenging Cases 
 Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
 
-### Occluded
-
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/occluded.png" width = "600">
-
-### Small
-
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/small.png" width = "600">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/occluded.png" width = "425"> <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/small.png" width = "425">
 
 ### Data Distribution
 
