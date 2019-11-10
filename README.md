@@ -84,6 +84,11 @@ Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/104
 | 99%       | 100%       | 91%       |
 | 4897/4898 | 1225/1225  | 2705/2940 |
 
+| Green     | Red        | Yellow    |
+|-----------|------------|-----------|
+| 97%       | 92%        | 34%       |
+| 1682/1730 | 964/1042   | 59/169    |
+
 ### Confusion Matrix
 
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "600">
