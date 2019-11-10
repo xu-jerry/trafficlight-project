@@ -21,14 +21,7 @@ This video shows the end result of my Convolutional Neural Network's classificat
 
 Examples of training images, with the traffic lights outlined in the color they are annotated in.
 
-### Green light
-<img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="600">
-
-### Red Light
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/red_labeled.png" width = "600">
-
-### Yellow Light
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/yellow_green_labeled.png" width = "600">
+<img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="250"> <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/red_labeled.png" width = "250"> <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/yellow_green_labeled.png" width = "250">
 
 ### Challenging Cases 
 Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
