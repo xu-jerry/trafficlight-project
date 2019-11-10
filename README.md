@@ -22,32 +22,34 @@ This video shows the end result of my Convolutional Neural Network's classificat
 Examples of training images, with the traffic lights outlined in the color they are annotated in.
 
 ### Green light
-<img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="300">
+<img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="600">
 
 ### Red Light
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/red_labeled.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/red_labeled.png" width = "600">
 
 ### Yellow Light
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/yellow_green_labeled.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/yellow_green_labeled.png" width = "600">
 
 ### Challenging Cases 
 Many of the images were either occluded, off, or too small. For some, even a human eye would not be able to detect which color the light was.
 
 ### Occluded
 
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/occluded.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/occluded.png" width = "600">
 
 ### Small
 
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/small.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/small.png" width = "600">
 
 ### Data Distribution
 
 #### Train
-![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_distribution.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_width.png) ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png)
+![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_distribution.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_width.png) 
+![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png)
 
 #### Test
-![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_distribution.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_width.png) ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_height.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_size.png)
+![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_distribution.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_width.png) 
+![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_height.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_size.png)
 
 Here is the comparision of train versus test data. There are a lot fewer yellow data than green data, which contributes to the lower accuracy for data with ground truth yellow.
 
@@ -67,7 +69,7 @@ To train, I used a decaying learning rate, starting from 0.001 and decaying by 1
 
 In order to see if my model was overfitting the data, I split the training data into train and validation, in an 8:2 ratio. Here is the plot of training loss versus validation loss:
 
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrainingValidationLoss.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrainingValidationLoss.png" width = "600">
 
 As you can see, the validation loss is always below the training loss, suggesting that there is no overfitting. Note that the y-axis is log scale.
 
@@ -77,12 +79,24 @@ After training the model, I evaluated it on the dataset. Accuracy for the traini
 
 Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/1042) of red, and 34% (59/169) of yellow. As expected, yellow was the most inaccurate, due to the very few training data of yellow.
 
+| Test      | Validation | Train     |
+|-----------|------------|-----------|
+| 99%       | 100%       | 91%       |
+| 4897/4898 | 1225/1225  | 2705/2940 |
+
 ### Confusion Matrix
 
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "300">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "600">
+
+## Script Descriptions
 
 ## Further Discussion
 This entire project used annotations from the Bosch dataset. Later, this can expand to image segmentation so that it can identify where the traffic lights are from any image, in addition to classifying them. Also, this was a simplified version of the problem, with all the arrow cases removed and all the traffic lights smaller than 5 pixels wide and 10 pixels long removed. If this can expand further, we can implement this piece of code into a physical device than can be attached to a windshield, identifying traffic lights in real time.
 
 ## Contact
 If you have any questions, feel free to contact me at xuchujun2672@gmail.com!
+
+## References
+[Bosch dataset link](https://hci.iwr.uni-heidelberg.de/node/6132)
+[Bosch dataset Github](https://github.com/bosch-ros-pkg/bstld)
+[Pytorch framework Github](https://github.com/pytorch/pytorch)
