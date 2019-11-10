@@ -1,6 +1,14 @@
 # Traffic Light Project
 
 Using the Bosch dataset, this is a machine learning project that will be able to identify whether a traffic light in an image is red, green, or, yellow. The Bosch dataset has testing and training data on their website, but I decided to switch them because the training data had a couple of errors in the annotations. In addition, I wanted the training to have more images than test. My training dataset had 8334 images and my testing dataset had 5093 images, all with a resolution of 1280 x 720 pixels.
+## Table of Contents
+
+- [Demo Video](#demo-video)
+- [Data Visulization](#data-visualization)
+- [Convolutional Neural Network](#convolutional-neural-network)
+- [Training Process](#training-process)
+- [Evaluation](#evaluation)
+- [Further Discussion](#further-discussion)
 
 ## Demo Video
 [![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=G4B4tAR6vx4)
