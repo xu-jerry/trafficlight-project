@@ -5,7 +5,7 @@ Using the [Bosch dataset](https://hci.iwr.uni-heidelberg.de/node/6132), this is 
 ## Table of Contents
 
 - [Demo Video](#demo-video)
-- [Script Usage](#script-usage)
+- [Usage](#usage)
 - [Data Visulization](#data-visualization)
 - [Convolutional Neural Network](#convolutional-neural-network)
 - [Training Process](#training-process)
@@ -19,7 +19,7 @@ Using the [Bosch dataset](https://hci.iwr.uni-heidelberg.de/node/6132), this is 
 
 This video shows the end result of my Convolutional Neural Network's classification of the annotated traffic lights. Because it is not 100% accurate, the colors might be off in some frames.
 
-## Script Usage
+## Usage
 
 ```
 preprocessing.py
