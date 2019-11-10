@@ -101,13 +101,14 @@ Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/104
 
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "600">
 
-|        | Red     | Green   | Yellow  | Total | Precision |
-|--------|---------|---------|---------|-------|-----------|
-| Red    | 1682    | 61      | 73      | 1816  | 92.621%   |
-| Green  | 26      | 964     | 37      | 1027  | 93.866%   |
-| Yellow | 22      | 17      | 59      | 98    | 60.204%   |
-| Total  | 1730    | 1042    | 169     | 2941  |           |
-| Recall | 97.255% | 92.514% | 34.911% |       |           |
+|                    |                          Truth Data                         |
+|--------------------|--------|------------|---------|---------|-------|-----------|
+|                    |        | Red        | Green   | Yellow  | Total | Precision |
+| Classifier Results | Red    | 1682       | 61      | 73      | 1816  | 92.621%   |
+|                    | Green  | 26         | 964     | 37      | 1027  | 93.866%   |
+|                    | Yellow | 22         | 17      | 59      | 98    | 60.204%   |
+|                    | Total  | 1730       | 1042    | 169     | 2941  |           |
+|                    | Recall | 97.255%    | 92.514% | 34.911% |       |           |
 
 ## Further Discussion
 This entire project used annotations from the Bosch dataset. Later, this can expand to image segmentation so that it can identify where the traffic lights are from any image, in addition to classifying them. Also, this was a simplified version of the problem, with all the arrow cases removed and all the traffic lights smaller than 5 pixels wide and 10 pixels long removed. If this can expand further, we can implement this piece of code into a physical device than can be attached to a windshield, identifying traffic lights in real time.
