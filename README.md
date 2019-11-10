@@ -101,7 +101,7 @@ Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/104
 
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "600">
 
-| Truth Data \ Classifier Results | Red     | Green   | Yellow  | Total | Precision |
+| Classifier Results \ Truth Data | Red     | Green   | Yellow  | Total | Precision |
 |---------------------------------|---------|---------|---------|-------|-----------|
 | Red                             | 1682    | 61      | 73      | 1816  | 92.621%   |
 | Green                           | 26      | 964     | 37      | 1027  | 93.866%   |
