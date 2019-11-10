@@ -98,5 +98,7 @@ If you have any questions, feel free to contact me at xuchujun2672@gmail.com!
 
 ## References
 [Bosch dataset link](https://hci.iwr.uni-heidelberg.de/node/6132)
+
 [Bosch dataset Github](https://github.com/bosch-ros-pkg/bstld)
+
 [Pytorch framework Github](https://github.com/pytorch/pytorch)
