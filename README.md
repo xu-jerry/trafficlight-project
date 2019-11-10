@@ -1,6 +1,7 @@
 # Traffic Light Project
 
-Using the Bosch dataset, this is a machine learning project that will be able to identify whether a traffic light in an image is red, green, or, yellow. The Bosch dataset has testing and training data on their website, but I decided to switch them because the training data had a couple of errors in the annotations. In addition, I wanted the training to have more images than test. My training dataset had 8334 images and my testing dataset had 5093 images, all with a resolution of 1280 x 720 pixels.
+Using the [Bosch dataset](https://hci.iwr.uni-heidelberg.de/node/6132), this is a machine learning project that will be able to identify whether a traffic light in an image is red, green, or, yellow. The Bosch dataset has testing and training data on their website, but I decided to switch them because the training data had a couple of errors in the annotations. In addition, I wanted the training to have more images than test. My training dataset had 8334 images and my testing dataset had 5093 images, all with a resolution of 1280 x 720 pixels.
+
 ## Table of Contents
 
 - [Demo Video](#demo-video)
@@ -13,7 +14,11 @@ Using the Bosch dataset, this is a machine learning project that will be able to
 ## Demo Video
 [![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=G4B4tAR6vx4)
 
+This video shows the end result of my Convolutional Neural Network's classification of the annotated traffic lights. Because it is not 100% accurate, the colors might be off in some frames.
+
 ## Data Visualization
+
+Examples of training images, with the traffic lights outlined in the color they are annotated in.
 
 ### Green light
 <img src="https://raw.githubusercontent.com/xu-jerry/trafficlight-project/master/Images/green_labeled.png" width="300">
@@ -49,7 +54,7 @@ Many of the images were either occluded, off, or too small. For some, even a hum
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_height.png" width = "300">
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_size.png" width = "300">
 
-Here is the comparision of train versus test data
+Here is the comparision of train versus test data. There are a lot fewer yellow data than green data, which contributes to the lower accuracy for data with ground truth yellow.
 
 ## Convolutional Neural Network
 
