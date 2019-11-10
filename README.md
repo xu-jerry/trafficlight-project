@@ -32,7 +32,8 @@ Many of the images were either occluded, off, or too small. For some, even a hum
 
 #### Train
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_distribution.png" width = "425"> <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_width.png" width = "425">
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png" width = "425"> <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png" width = "425">
+<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png" width = "425"> <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png" width = "425">
+
 
 The test dataset has a similar distribution. There are a lot fewer yellow data than green data, which contributes to the lower accuracy for data with ground truth yellow.
 
