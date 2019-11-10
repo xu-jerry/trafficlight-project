@@ -10,6 +10,7 @@ Using the [Bosch dataset](https://hci.iwr.uni-heidelberg.de/node/6132), this is 
 - [Training Process](#training-process)
 - [Evaluation](#evaluation)
 - [Further Discussion](#further-discussion)
+- [Contact](#contact)
 
 ## Demo Video
 [![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=G4B4tAR6vx4)
@@ -88,3 +89,6 @@ Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/104
 
 ## Further Discussion
 This entire project used annotations from the Bosch dataset. Later, this can expand to image segmentation so that it can identify where the traffic lights are from any image, in addition to classifying them. Also, this was a simplified version of the problem, with all the arrow cases removed and all the traffic lights smaller than 5 pixels wide and 10 pixels long removed. If this can expand further, we can implement this piece of code into a physical device than can be attached to a windshield, identifying traffic lights in real time.
+
+## Contact
+If you have any questions, feel free to contact me at xuchujun2672@gmail.com!
