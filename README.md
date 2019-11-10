@@ -47,10 +47,7 @@ Many of the images were either occluded, off, or too small. For some, even a hum
 ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_distribution.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_width.png) ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_heights.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/train_size.png)
 
 #### Test
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_distribution.png" width = "300">
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_width.png" width = "300">
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_height.png" width = "300">
-<img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_size.png" width = "300">
+![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_distribution.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_width.png) ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_height.png)  ![test](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/test_size.png)
 
 Here is the comparision of train versus test data. There are a lot fewer yellow data than green data, which contributes to the lower accuracy for data with ground truth yellow.
 
