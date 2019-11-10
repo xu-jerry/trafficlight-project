@@ -79,13 +79,21 @@ Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/104
 
 ## Script Descriptions
 
-### preprocessing.py
+```
+preprocessing.py
+```
 
-### train.py
+```
+train.py
+```
 
-### test.py
+```
+test.py
+```
 
-### eval.py
+```
+eval.py
+```
 
 ## Further Discussion
 This entire project used annotations from the Bosch dataset. Later, this can expand to image segmentation so that it can identify where the traffic lights are from any image, in addition to classifying them. Also, this was a simplified version of the problem, with all the arrow cases removed and all the traffic lights smaller than 5 pixels wide and 10 pixels long removed. If this can expand further, we can implement this piece of code into a physical device than can be attached to a windshield, identifying traffic lights in real time.
