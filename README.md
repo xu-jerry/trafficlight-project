@@ -5,17 +5,41 @@ Using the [Bosch dataset](https://hci.iwr.uni-heidelberg.de/node/6132), this is 
 ## Table of Contents
 
 - [Demo Video](#demo-video)
+- [Script Usage](#script-usage)
 - [Data Visulization](#data-visualization)
 - [Convolutional Neural Network](#convolutional-neural-network)
 - [Training Process](#training-process)
 - [Evaluation](#evaluation)
 - [Further Discussion](#further-discussion)
 - [Contact](#contact)
+- [References](#references)
 
 ## Demo Video
 [![IMAGE ALT TEXT HERE](https://github.com/xu-jerry/trafficlight-project/blob/master/Images/TrafficLightTestVideo.png)](https://www.youtube.com/watch?v=G4B4tAR6vx4)
 
 This video shows the end result of my Convolutional Neural Network's classification of the annotated traffic lights. Because it is not 100% accurate, the colors might be off in some frames.
+
+## Script Usage
+
+```
+preprocessing.py
+```
+Extrapolates data from the YAML file, filters out the occluded and off labels, crops images and sorts them into folders, draws the bounding boxes.
+
+```
+visualization.py
+```
+Prints out statistics about the dataset, including drawing graphs about the distribution, heights, widths, and sizes.
+
+```
+train.py
+```
+The body of the CNN, normalizes all images to be 32 x 32 pixels, iterates through 10 epochs, printing out the loss for both train and validation, saves the model locally.
+
+```
+eval.py
+```
+Tests for accuracy in each of the datasets, prints out accuracy for each label as well, prints confusion matrix.
 
 ## Data Visualization
 
@@ -76,28 +100,6 @@ Inside the test data, the model predicted 97% (1682/1730) of green, 92% (964/104
 ### Confusion Matrix
 
 <img src="https://github.com/xu-jerry/trafficlight-project/blob/master/Images/ConfusionMatrix.png" width = "600">
-
-## Script Descriptions
-
-```
-preprocessing.py
-```
-Extrapolates data from the YAML file, filters out the occluded and off labels, crops images and sorts them into folders, draws the bounding boxes.
-
-```
-visualization.py
-```
-Prints out statistics about the dataset, including drawing graphs about the distribution, heights, widths, and sizes.
-
-```
-train.py
-```
-The body of the CNN, normalizes all images to be 32 x 32 pixels, iterates through 10 epochs, printing out the loss for both train and validation, saves the model locally.
-
-```
-eval.py
-```
-Tests for accuracy in each of the datasets, prints out accuracy for each label as well, prints confusion matrix.
 
 ## Further Discussion
 This entire project used annotations from the Bosch dataset. Later, this can expand to image segmentation so that it can identify where the traffic lights are from any image, in addition to classifying them. Also, this was a simplified version of the problem, with all the arrow cases removed and all the traffic lights smaller than 5 pixels wide and 10 pixels long removed. If this can expand further, we can implement this piece of code into a physical device than can be attached to a windshield, identifying traffic lights in real time.
